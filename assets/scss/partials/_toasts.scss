@@ -1,0 +1,11 @@
+.toast-hint {
+	@include toast-variant($highlight-color);
+	color: $dark-color;
+
+	.feather {
+		float: left;
+		margin-right: .8rem;
+		margin-bottom: .8rem;
+		vertical-align: -30%;
+	}
+}

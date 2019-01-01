@@ -1,0 +1,9 @@
+.chip-topic,
+a.chip-topic {
+	color: inherit;
+
+	> figure {
+		background: darken($bg-color-dark, 10%);
+		color: inherit;
+	}
+}

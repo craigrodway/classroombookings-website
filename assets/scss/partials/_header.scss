@@ -1,0 +1,35 @@
+.header {
+	// background-color: $secondary-color-light;
+	padding: 1.2rem 0;
+	// border-bottom: 1px solid $gray-color;
+
+	.btn {
+		margin-left: 1rem;
+	}
+
+	.btn-link {
+		color: $clrs-blue;
+		&:hover,
+		&:focus,
+		&:active {
+			color: $primary-color;
+		}
+
+		&.btn-active {
+			color: $dark-color;
+		}
+	}
+
+	.btn-primary {
+		@include button-variant($clrs-blue);
+	}
+
+	.logo-link {
+		line-height: 1;
+	}
+
+	.img-logo {
+		max-height: 40px;
+		width: auto;
+	}
+}

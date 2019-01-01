@@ -1,0 +1,40 @@
+.col-block,
+a.col-block {
+
+	position: relative;
+	border-radius: $border-radius;
+	padding: 1.5rem;
+	padding-left: 3rem;
+	color: inherit;
+
+	.block-title {
+		position: relative;
+		line-height: 1;
+		font-weight: 600;
+		font-size: 1.2rem;
+	}
+
+	.block-icon {
+		position: absolute;
+		left: -2rem;
+	}
+
+	.block-summary {
+		margin: 0;
+		color: $gray-color-dark;
+	}
+
+	.block-meta {
+		font-size: .7rem;
+		float: right;
+		color: $gray-color-dark;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		background: $gray-color-light;
+		color: inherit;
+		text-decoration: none;
+	}
+}

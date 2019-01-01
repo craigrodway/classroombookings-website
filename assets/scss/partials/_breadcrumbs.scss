@@ -1,0 +1,19 @@
+// Breadcrumbs
+.breadcrumb {
+
+	.breadcrumb-item {
+
+		&:not(:last-child) {
+			a {
+				color: $clrs-blue;
+			}
+		}
+
+		&:last-child {
+			a {
+				color: $dark-color;
+			}
+		}
+
+	}
+}

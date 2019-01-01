@@ -1,0 +1,23 @@
+.quote-testimonial {
+	margin: 0;
+	padding: 1.5rem;
+	// border: $border-width-lg solid $border-color;
+	border: 0;
+	background: #fff;
+	min-height: 180px;
+	margin-bottom: 1rem;
+
+	p {
+		font-size: .7rem;
+	}
+
+	cite {
+		font-weight: 600;
+		font-style: normal;
+		font-size: .6rem;
+		line-height: 1.33;
+		display: inline-block;
+		color: $gray-color-dark;
+	}
+}
+

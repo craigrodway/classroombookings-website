@@ -1,0 +1,31 @@
+
+.Inputfields li[class*='Inputfield_admin_column_right'] {
+    float: right;
+}
+
+.Inputfields li[class*='Inputfield_admin_column_right'],
+.Inputfields li[class*='Inputfield_admin_column_left']{
+    display: inline-block;
+    clear: none;
+    margin-top: 0!important;
+}
+
+.Inputfields li[class*='Inputfield_admin_column_right'] > div.ui-widget-content,
+.Inputfields li[class*='Inputfield_admin_column_right'] > div.InputfieldContent,
+.Inputfields li[class*='Inputfield_admin_column_left'] > div.ui-widget-content,
+.Inputfields li[class*='Inputfield_admin_column_left'] > div.InputfieldContent {
+    border: none;
+    padding: 0;
+}
+
+.Inputfields li[class*='Inputfield_admin_column_right'] > div.ui-widget-content,
+.Inputfields li[class*='Inputfield_admin_column_right'] > div.InputfieldContent{
+    margin-left: 0px!important;
+}
+
+.Inputfields li[class*='Inputfield_admin_column_right'] > label,
+.Inputfields li[class*='Inputfield_admin_column_left'] > label {
+    display: none;
+}
+
+

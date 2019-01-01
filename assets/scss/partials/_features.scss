@@ -1,0 +1,25 @@
+.col-feature {
+
+	margin-bottom: 2rem;
+	padding-right: 2rem;
+
+	.feature-icon {
+		display: block;
+		margin-bottom: .75rem;
+
+		.feather {
+			width: 32px;
+			height: 32px;
+		}
+	}
+
+	h5 {
+		font-weight: 600;
+		margin-bottom: .75rem;
+		line-height: 1;
+	}
+	p {
+		// color: $gray-color-dark;
+	}
+}
+

@@ -1,0 +1,44 @@
+.card-pricing {
+
+	height: 100%;
+
+	mark {
+		padding: .2rem .4rem;
+		font-size: .9rem;
+		font-weight: normal;
+	}
+
+	.card-price {
+		margin-top: 1rem;
+		font-weight: 600;
+	}
+
+	dl {
+		margin-bottom: 1rem;
+		padding-left: 24px + 12px;
+		position: relative;
+		dt {
+			font-weight: normal;
+			font-size: .8rem;
+			margin-bottom: 0;
+			line-height: 24px;
+			margin: 0;
+			// margin-bottom: 1rem;
+			// padding: .6rem 0;
+			// border-bottom: 1px solid $gray-color;
+		}
+		dd {
+			margin: 0;
+			font-weight: normal;
+			font-size: .7rem;
+			color: $gray-color-dark;
+		}
+		.feather {
+			position: absolute;
+			top: 0;
+			left: 0;
+			vertical-align: -30%;
+			margin-right: 12px;
+		}
+	}
+}

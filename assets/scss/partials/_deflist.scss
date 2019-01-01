@@ -1,0 +1,25 @@
+.docs-list {
+
+	display: block;
+
+	a, a:link, a:visited {
+		color: $primary-color;
+	}
+
+	dt {
+		font-size: .9rem;
+		font-weight: 600;
+		margin: 0;
+		margin-bottom: 0.2rem;
+	}
+
+	dd {
+		margin: 0;
+		margin-bottom: 1rem;
+		padding-bottom: 1rem;
+		border-bottom: 1px solid lighten($gray-color, 15%);
+		font-size: .8rem;
+		color: $dark-color;
+	}
+
+}
