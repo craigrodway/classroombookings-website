@@ -91,8 +91,8 @@ DirectoryIndex index.php index.html index.htm
   # -----------------------------------------------------------------------------------------------
   # 9. If you only want to allow HTTPS, uncomment the RewriteCond and RewriteRule lines below.
   # -----------------------------------------------------------------------------------------------
-  RewriteCond %{HTTPS} off
-  RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  # RewriteCond %{HTTPS} off
+  # RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
   # If using an AWS load balancer, use these two lines below instead of those above:
   RewriteCond %{HTTP:X-Forwarded-Proto} =http
