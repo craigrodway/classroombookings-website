@@ -129,7 +129,7 @@ DirectoryIndex index.php index.html index.htm
   # For example: http://processwire.com/ would be redirected to http://www.processwire.com/
   # -----------------------------------------------------------------------------------------------
 
-  RewriteCond %{HTTP_HOST} !^www\. [NC]
+  RewriteCond %{HTTP_HOST} ^classroombookings\. [NC]
   RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
   # -----------------------------------------------------------------------------------------------
