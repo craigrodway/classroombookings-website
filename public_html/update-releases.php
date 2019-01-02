@@ -17,3 +17,4 @@ $pageRender = wire('modules')->get('PageRender');
 $pageRender->getModuleConfigInputfields(array());
 
 echo "OK";
+exit(0);
