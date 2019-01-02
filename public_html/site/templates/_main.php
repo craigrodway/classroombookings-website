@@ -1,7 +1,7 @@
 <?php namespace ProcessWire;
-$titleTag = region('pageTitle') . " | " . $pagecache->home->headline;
+$titleTag = region('pageTitle') . " | " . $settings->site_name;
 if ($page == $pagecache->home) {
-	$titleTag = $pagecache->home->headline . " | " . $pagecache->home->summary;
+	$titleTag = $settings->site_name . " | " . $settings->site_tagline;
 }
 
 $cssBasePath = 'assets/';
@@ -15,7 +15,7 @@ $cssUrl = $cssUrl.'?id='.filemtime($cssPath);
 <html lang="en">
 
 	<head>
-		<?php if ($config->environment == 'production'): ?>
+		<?php if (config('env') == 'production'): ?>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-3041463-3"></script>
 		<script>
 		window.dataLayer = window.dataLayer || [];
