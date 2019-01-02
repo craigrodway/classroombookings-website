@@ -5,12 +5,10 @@
 	<div class="container grid-xl">
 		<div class="columns">
 			<div class="column col-12">
+				<a class="off-canvas-toggle btn btn-primary btn-action show-md" href="#sidebar">
+					<?= feather('menu') ?>
+				</a>
 				<div class="navbar">
-					<section class="navbar-section show-md">
-						<a class="off-canvas-toggle btn btn-primary btn-action show-md" href="#sidebar">
-							<?= feather('menu') ?>
-						</a>
-					</section>
 					<section class="navbar-section">
 						<a href="<?= $pagecache->home->url ?>" class="logo-link d-inline-block">
 							<img class="img-logo" src="<?= templatesUrl('assets/img/crbs-logo.png') ?>">

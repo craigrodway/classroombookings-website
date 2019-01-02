@@ -2889,34 +2889,34 @@ a.text-error:visited {
 
 .header {
   padding: 1.2rem 0; }
-  .header .btn {
+  .header .navbar-section .btn {
     margin-left: 1rem; }
-  .header .btn-link {
+  .header .navbar-section .btn-link {
     color: #0074d9; }
-    .header .btn-link:hover, .header .btn-link:focus, .header .btn-link:active {
+    .header .navbar-section .btn-link:hover, .header .navbar-section .btn-link:focus, .header .navbar-section .btn-link:active {
       color: #ff6400; }
-    .header .btn-link.btn-active {
+    .header .navbar-section .btn-link.btn-active {
       color: #303742; }
-  .header .btn-primary {
+  .header .navbar-section .btn-primary {
     background: #0074d9;
     border-color: #006cca;
     color: #fff; }
-    .header .btn-primary:focus {
+    .header .navbar-section .btn-primary:focus {
       box-shadow: 0 0 0 0.1rem rgba(0, 116, 217, 0.2); }
-    .header .btn-primary:focus, .header .btn-primary:hover {
+    .header .navbar-section .btn-primary:focus, .header .navbar-section .btn-primary:hover {
       background: #006fcf;
       border-color: #0066c0;
       color: #fff; }
-    .header .btn-primary:active, .header .btn-primary.active {
+    .header .navbar-section .btn-primary:active, .header .navbar-section .btn-primary.active {
       background: #0061b5;
       border-color: #0059a6;
       color: #fff; }
-    .header .btn-primary.loading::after {
+    .header .navbar-section .btn-primary.loading::after {
       border-bottom-color: #fff;
       border-left-color: #fff; }
-  .header .logo-link {
+  .header .navbar-section .logo-link {
     line-height: 1; }
-  .header .img-logo {
+  .header .navbar-section .img-logo {
     max-height: 40px;
     width: auto; }
 
@@ -3167,7 +3167,8 @@ body {
 .off-canvas .off-canvas-toggle {
   position: relative;
   left: auto;
-  top: auto; }
+  top: auto;
+  margin-bottom: 0.8rem; }
 
 .col-pricing {
   margin-bottom: 1.6rem; }
