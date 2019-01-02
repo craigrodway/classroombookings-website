@@ -151,6 +151,10 @@ $config->pagination = array(
 );
 
 
+// Locale setting
+setlocale(LC_ALL, 'en_GB.UTF-8');
+
+
 // Environment overwrite
 if (is_file(__DIR__ . '/config.local.php')) {
 	require_once(__DIR__ . '/config.local.php');
