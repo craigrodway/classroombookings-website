@@ -4,6 +4,9 @@ if ($page == $pagecache->home) {
 	$titleTag = $settings->site_name . " | " . $settings->site_tagline;
 }
 
+$meta['property']['og:title'] = region('pageTitle');
+$meta['name']['twitter:title'] = region('pageTitle');
+
 $cssBasePath = 'assets/';
 $cssBaseName = 'crbs';
 $cssFile = (config('env') == 'production' ? "{$cssBaseName}.min.css" : "{$cssBaseName}.css");
@@ -43,7 +46,14 @@ $cssUrl = $cssUrl.'?id='.filemtime($cssPath);
 		<meta name="msapplication-TileColor" content="#ff6400">
 		<meta name="msapplication-config" content="/brand/browserconfig.xml">
 		<meta name="theme-color" content="#ff6400">
-
+		<?php
+		foreach ($meta as $prop => $items) {
+			foreach ($items as $k => $v) {
+				$v = strip_tags($v);
+				echo "<meta {$prop}='{$k}' content='{$v}'>\n";
+			}
+		}
+		?>
 	</head>
 
 	<body>

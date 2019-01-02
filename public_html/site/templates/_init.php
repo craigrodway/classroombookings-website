@@ -27,12 +27,17 @@ if ($page == $pagecache->home) {
 
 
 // OpenGraph/Twitter Cards
-/*$meta = [];
+$meta = [];
 $meta['property'] = array(
-	'og:title' => region('pageTitle'),
+	'og:type' => 'website',
 	'og:site_name' => $settings->site_name,
 	'og:url' => $page->httpUrl,
-	'og:description' => $settings->site_tagline,
-	'og:type' => 'website',
+	'og:description' => $page->get('summary|headline'),
+	'og:image' => rtrim($pagecache->home->httpUrl, '/').templatesUrl('assets/img/crbs-logo-white.png'),
 );
-$meta['name'] = array();*/
+$meta['name'] = array(
+	'twitter:card' => 'summary',
+	'twitter:description' => $page->get('summary|headline'),
+	'twitter:url' => $page->httpUrl,
+	'twitter:image' => rtrim($pagecache->home->httpUrl, '/').templatesUrl('assets/img/crbs-logo-white.png'),
+);
