@@ -9,7 +9,7 @@ namespace ProcessWire;
 				<div class="hero hero-sm text-center">
 					<div class="hero-body">
 						<h1><?= $settings->site_tagline ?></h1>
-						<p>The practical web-based alterative to sprawling spreadsheets, cumbersome calendars and pieces of paper.</p>
+						<p>The practical web-based alternative to sprawling spreadsheets, cumbersome calendars and pieces of paper.</p>
 					</div>
 				</div>
 			</div>
