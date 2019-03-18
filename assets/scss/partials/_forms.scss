@@ -1,0 +1,27 @@
+.form-group {
+	&:not(:last-child) {
+		margin-bottom: $unit-8;
+	}
+
+	.form-label {
+		font-weight: 600;
+	}
+
+	.form-hint {
+		display: block;
+		font-size: $font-size-sm;
+		color: $gray-color-dark;
+		margin-bottom: $unit-3;
+	}
+}
+
+
+
+.fill-this-in {
+	position: absolute;
+	text-indent: -99999px;
+	width: 0;
+	height: 0;
+	visibility: hidden;
+	display: block;
+}

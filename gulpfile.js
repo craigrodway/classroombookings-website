@@ -2,6 +2,7 @@ var gulp = require("gulp"),
 	crypto = require("crypto"),
 	sass = require("gulp-sass"),
 	rename = require("gulp-rename"),
+	autoprefixer = require("gulp-autoprefixer"),
 	cleancss = require("gulp-clean-css");
 
 
@@ -28,7 +29,9 @@ gulp.task('build', gulp.parallel(stylesBuild));
 function stylesCore() {
 	return gulp.src(paths.styles.src + '/crbs.scss')
 		.pipe(sass())
+		.pipe(autoprefixer())
 }
+
 function stylesDev() {
 	return stylesCore()
 		.pipe(rename('crbs.css'))

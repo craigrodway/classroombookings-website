@@ -9,3 +9,8 @@
 		vertical-align: -30%;
 	}
 }
+
+.toast-info {
+	@include toast-variant(mix($clrs-aqua, #fff, 15%));
+	color: $dark-color;
+}
