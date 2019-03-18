@@ -164,8 +164,8 @@ function sendEmail($msgId, $formData) {
 function sendToTrello($formData) {
 
 	$body = "**Name:** {$formData->name}\r\n";
-	$body .= "**Email:**: {$formData->email}\r\n";
-	$body .= "**Subdomain:**: {$formData->subdomain}\r\n";
+	$body .= "**Email:** {$formData->email}\r\n";
+	$body .= "**Subdomain:** {$formData->subdomain}\r\n";
 	$body .= "\n\n**Comments:**\r\n\r\n{$formData->comments}";
 
 	$mail = wireMail();
