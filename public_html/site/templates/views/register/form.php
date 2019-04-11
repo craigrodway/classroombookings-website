@@ -18,17 +18,16 @@
 		}
 		?>
 
-		<p>Complete the fields in the form below. All requests are processed manually, so please allow a short time for it to be actioned.</p>
-		<p>Once your installation is ready, you will have full access to try it out and use it for 14 days.</p>
+		<p>Complete the fields in the form below. All requests are processed manually, so please allow a short time for your new installation to be set up.</p>
+		<p>Once your installation is ready, you will have full access to try it out for a few weeks.</p>
 		<p>If you have any questions, please email <strong><a href="mailto:<?= protectEmail('craig@classroombookings.com') ?>"><?= protectEmail('craig@classroombookings.com') ?></a></strong>.</p>
 
 		<div class="toast toast-info">
 			<h3 class='h6'>Payment information</h3>
 				<ul>
-					<li>Currently priced at &pound;66 a year.</li>
-					<li>Payment can be made by bank transfer or Direct Debit.</li>
-					<li>There is a &pound;4 charge for paying by cheque.</li>
-					<li>Purchase Orders are accepted.</li>
+					<li>Currently priced at &pound;66 per year (or &euro;81).</li>
+					<li>Accepted payment methods are bank transfer <em>(preferred)</em>, Direct Debit, Credit/Debit card or cheque.</li>
+					<li>Purchase Orders are also accepted for schools who require them - I&rsquo;ll send you a quote along with your login details.</li>
 				</p>
 			</ul>
 		</div>
